@@ -4,6 +4,14 @@
 
 # Clone Code Credit : YT - @Tech_VJ / TG - @VJ_Bots / GitHub - @VJBots
 
+import os
+
+print("Current directory:", os.getcwd())  # Check the current directory
+print("Listing files in current directory:", os.listdir())  # List files to verify info.py exists
+
+from info import USER_DB_URI  # Try importing again
+
+
 import sys, glob, importlib, logging, logging.config, pytz, asyncio
 from pathlib import Path
 
