@@ -66,9 +66,9 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Abhay')
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or False
 
 # If Multiple Database Is True Then Fill All Three Below Database Uri Else You Will Get Error.
-O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://Lordbobbydb01:Lordbobbydb01@lordbobbydb01.x4zwf.mongodb.net/?retryWrites=true&w=majority&appName=Lordbobbydb01")   # This Db Is For Other Data Store
-F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://Lordbobbydb02:Lordbobbydb02@lordbobbydb02.xkvby.mongodb.net/?retryWrites=true&w=majority&appName=Lordbobbydb02")   # This Db Is For File Data Store
-S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://Lordbobbydb03:Lordbobbydb03@lordbobbydb03.ubhxs.mongodb.net/?retryWrites=true&w=majority&appName=Lordbobbydb03")   # This Db is for File Data Store When First Db Is Going To Be Full.
+O_DB_URI = environ.get('O_DB_URI', "")   # This Db Is For Other Data Store
+F_DB_URI = environ.get('F_DB_URI', "")   # This Db Is For File Data Store
+S_DB_URI = environ.get('S_DB_URI', "")   # This Db is for File Data Store When First Db Is Going To Be Full.
 
 
 # Premium And Referal Settings
@@ -82,8 +82,8 @@ PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟ�
 
 
 # Clone Information : If Clone Mode Is True Then Bot Clone Other Bots.
-CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
-CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "mongodb+srv://Lordbobbydb04:Lordbobbydb04@lordbobbydb04.2tkeu.mongodb.net/?retryWrites=true&w=majority&appName=Lordbobbydb04") # Necessary If clone mode is true
+CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
+CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "") # Necessary If clone mode is true
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'public_file_channel_LB') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 
